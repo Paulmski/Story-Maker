@@ -51,6 +51,7 @@ function changeSentencePart(int) {
 	if (sentence[int] > words[int].length) {
 		sentence[int] = 0;
 	}
+	speakNow(words[sentence[int]])
 	paragraph.textContent = formSentence();
 }
 
