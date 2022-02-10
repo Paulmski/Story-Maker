@@ -5,7 +5,6 @@
 // Create a new speechSynthesis object
 var synth = window.speechSynthesis;
 // Learn more about SpeechSynthesis.speak() at https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/speak
-var textToSpeak = 'This is the text string that you will generate with your script';
 
 // Arrays used to create the sentence.
 var speakButton = document.querySelector('button');
@@ -13,6 +12,10 @@ var words = [['My mom', 'My dad', 'The mailman', 'My cousin', 'My teacher', 'The
 
 /* Functions
 -------------------------------------------------- */
+// Retrieves indexes from sentence array and returns the string to be spoken
+function formSentence([int]) {
+	return words[0][sentence[0]] + ' ' + words[1][sentence[1]] + ' ' + words[2][sentence[2]] + ' ' + words[3][sentence[3]] + ' ' + words[4][sentence[4]]; 
+}
 function speakNow(string) {
 	// Create a new speech object, attaching the string of text to speak
 	var utterThis = new SpeechSynthesisUtterance(string);
@@ -24,5 +27,5 @@ function speakNow(string) {
 -------------------------------------------------- */
 // Onclick handler for the button that speaks the text contained in the above var textToSpeak
 speakButton.onclick = function() {
-	speakNow(textToSpeak);
+	speakNow(formSentence(sentence));
 }
