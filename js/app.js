@@ -32,13 +32,14 @@ function randomizeSentence() {
 	for (var i = 0; i < sentence.length; i++) {
 		sentence[i] = randomInt(words[i].length);
 	}
+	paragraph.textContent = formSentence();
 }
 
 function resetSentence() {
 	for (var i = 0; i < sentence.length; i++) {
 		sentence[i] = 0;
 	}
-
+	paragraph.textContent = formSentence();
 }
 
 function randomInt(max) {
