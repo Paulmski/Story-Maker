@@ -7,7 +7,7 @@ var synth = window.speechSynthesis;
 // Learn more about SpeechSynthesis.speak() at https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/speak
 
 // Arrays used to create the sentence.
-var speakButton = document.querySelector('button');
+var speakButton = document.GetElementByID('speakButton');
 var words = [['My mom', 'My dad', 'The mailman', 'My cousin', 'My teacher', 'The Lion', 'The dog'], ['sat on', 'ate', 'laughed at', 'hugged', 'climbed on', 'saw', 'yelled at'],['a slimy', 'a red', 'a freaky', 'a big', 'a small', 'an ugly', 'a cute'],['goat', 'camel', 'monkey', 'giraffe', 'ape', 'kitten', 'sheep'], ['on the moon', 'on a mountain', 'in a house', 'in a car', 'on a train', 'on the field', 'in the box']];
 
 var sentence = [0, 0, 0, 0, 0];
