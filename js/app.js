@@ -48,7 +48,7 @@ function randomInt(max) {
 
 function changeSentencePart(int) {
 	sentence[int] = sentence[int] + 1;
-	if (sentence[int] > words[int].length) {
+	if (sentence[int] == words[int].length) {
 		sentence[int] = 0;
 	}
 	speakNow(words[int][sentence[int]]);
