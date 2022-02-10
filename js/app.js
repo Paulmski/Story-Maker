@@ -10,13 +10,13 @@ var synth = window.speechSynthesis;
 var speakButton = document.querySelector('button');
 var words = [['My mom', 'My dad', 'The mailman', 'My cousin', 'My teacher', 'The Lion', 'The dog'], ['sat on', 'ate', 'laughed at', 'hugged', 'climbed on', 'saw', 'yelled at'],['a slimy', 'a red', 'a freaky', 'a big', 'a small', 'an ugly', 'a cute'],['goat', 'camel', 'monkey', 'giraffe', 'ape', 'kitten', 'sheep'], ['on the moon', 'on a mountain', 'in a house', 'in a car', 'on a train', 'on the field', 'in the box']];
 
-var sentence = [0, 0, 0, 0, 0]
+var sentence = [0, 0, 0, 0, 0];
 
 /* Functions
 -------------------------------------------------- */
 // Retrieves indexes from sentence array and returns the string to be spoken
 function formSentence([int]) {
-	return words[0][sentence[0]] + ' ' + words[1][sentence[1]] + ' ' + words[2][sentence[2]] + ' ' + words[3][sentence[3]] + ' ' + words[4][sentence[4]]; 
+	return words[0][sentence[0]] + ' ' + words[1][sentence[1]] + ' ' + words[2][sentence[2]] + ' ' + words[3][sentence[3]] + ' ' + words[4][sentence[4]];
 }
 function speakNow(string) {
 	// Create a new speech object, attaching the string of text to speak
