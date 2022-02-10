@@ -25,6 +25,23 @@ function speakNow(string) {
 	synth.speak(utterThis);
 }
 
+function randomizeSentence() {
+	for (var i = 0; i < sentence.length; i++) {
+		sentence[i] = randomInt(words[i].length);
+	} 
+}
+
+function resetSentence() {
+	for (var i = 0; i < sentence.length; i++) {
+		sentence[i] = 0;
+	} 
+
+}
+
+function randomInt(max) {
+	return Math.floor(Math.random() * max);
+}
+
 function changeSentencePart(int) {
 	sentence[int] = sentence[int] + 1;
 	if (sentence[int] > words[int].length) {
