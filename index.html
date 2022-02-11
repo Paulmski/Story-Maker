@@ -1,90 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- Bootstrap CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
 
-  <body>
+<body>
 
-   
 
-      <div class="row">
+
+    <div class="row">
         <div class="column">
-          <button onclick="changeSentencePart(0)">Change person</button>
-          <img src="./img/mom.png" alt="a mom" />
-          <img src="./img/dad.png" alt=" a dad"/>
-          <img src="./img/mailman.png" alt="a mailman"/>
-          <img src="./img/cousin.png" alt="a cousin"/>
-          <img src="./img/teacher.png" alt="a teacher"/>
-          <img src="./img/lion.png" alt="a lion"/>
-          <img src="./img/dog.png" alt="a dog"/>
+            <button onclick="changeSentencePart(0)">Change person</button>
+            <img src="./img/mom.png" alt="a mom" />
+            <img src="./img/dad.png" alt=" a dad" />
+            <img src="./img/mailman.png" alt="a mailman" />
+            <img src="./img/cousin.png" alt="a cousin" />
+            <img src="./img/teacher.png" alt="a teacher" />
+            <img src="./img/lion.png" alt="a lion" />
+            <img src="./img/dog.png" alt="a dog" />
         </div>
         <div class="column">
-          <button onclick="changeSentencePart(1)">Change action</button>
-          <img src="./img/sat on.png" alt="boy sitting on chair"/>
-          <img src="./img/ate.png" alt="boy eating"/>
-          <img src="./img/laughing.png" alt="girl laughing"/>
-          <img src="./img/hugged.png" alt="girl hugging"/>
-          <img src="./img/climbed on.png" alt="boy climbing ladder"/>
-          <img src="./img/saw.png" alt="girl looking" />
-          <img src="./img/yelled at.png" alt="boy yelling" />
+            <button onclick="changeSentencePart(1)">Change action</button>
+            <img src="./img/sat on.png" alt="boy sitting on chair" />
+            <img src="./img/ate.png" alt="boy eating" />
+            <img src="./img/laughing.png" alt="girl laughing" />
+            <img src="./img/hugged.png" alt="girl hugging" />
+            <img src="./img/climbed on.png" alt="boy climbing ladder" />
+            <img src="./img/saw.png" alt="girl looking" />
+            <img src="./img/yelled at.png" alt="boy yelling" />
         </div>
         <div class="column">
-          <button onclick="changeSentencePart(2)">Change adjective</button>
-          <img src="./img/slimy.png" alt="green slime"/>
-          <img src="./img/red.png" alt="red blob"/>
-          <img src="./img/freaky.png" alt="freaky monkey"/>
-          <img src="./img/big.png" alt="giant"/>
-          <img src="./img/small.png" alt="small house"/>
-          <img src="./img/ugly.png" alt="ugly monster"/>
-          <img src="./img/cute.png" alt="cute monster"/>
+            <button onclick="changeSentencePart(2)">Change adjective</button>
+            <img src="./img/slimy.png" alt="green slime" />
+            <img src="./img/red.png" alt="red blob" />
+            <img src="./img/freaky.png" alt="freaky monkey" />
+            <img src="./img/big.png" alt="giant" />
+            <img src="./img/small.png" alt="small house" />
+            <img src="./img/ugly.png" alt="ugly monster" />
+            <img src="./img/cute.png" alt="cute monster" />
         </div>
         <div class="column">
-          <button onclick="changeSentencePart(3)">Change thing</button>
-          <img src="./img/goat.png" alt="goat"/>
-          <img src="./img/camel.png" alt="camel"/>
-          <img src="./img/monkey.png" alt="monkey"/>
-          <img src="./img/giraffe.png" alt="giraffe"/>
-          <img src="./img/ape.png" alt="ape"/>
-          <img src="./img/kitten.png" alt="kitten"/>
-          <img src="./img/sheep.png" alt="sheep"/>
+            <button onclick="changeSentencePart(3)">Change thing</button>
+            <img src="./img/goat.png" alt="goat" />
+            <img src="./img/camel.png" alt="camel" />
+            <img src="./img/monkey.png" alt="monkey" />
+            <img src="./img/giraffe.png" alt="giraffe" />
+            <img src="./img/ape.png" alt="ape" />
+            <img src="./img/kitten.png" alt="kitten" />
+            <img src="./img/sheep.png" alt="sheep" />
         </div>
         <div class="column">
-          <button onclick="changeSentencePart(4)">Change place</button>
-          <img src="./img/on the moon.png" alt="moon"/>
-          <img src="./img/on a mountain.png" alt="mountain"/>
-          <img src="./img/in a house.png" alt="house"/>
-          <img src="./img/in a car.png" alt="car"/>
-          <img src="./img/on a train.png" alt="train"/>
-          <img src="./img/on the field.png" alt="field"/>
-          <img src="./img/in the box.png" alt="box"/>
-        </div
-      </div>
+            <button onclick="changeSentencePart(4)">Change place</button>
+            <img src="./img/on the moon.png" alt="moon" />
+            <img src="./img/on a mountain.png" alt="mountain" />
+            <img src="./img/in a house.png" alt="house" />
+            <img src="./img/in a car.png" alt="car" />
+            <img src="./img/on a train.png" alt="train" />
+            <img src="./img/on the field.png" alt="field" />
+            <img src="./img/in the box.png" alt="box" />
+        </div>
     </div>
-	<div class="options">
-		<button onclick="randomizeSentence()">Randomize</button>
-		<button onclick="resetSentence()">Reset</button>
-		<button id="speakButton">Speak the prepared sentence</button>
-	  </div>
-	  <div class="sentence">
-		<p id="sentence"></p>
-		<script src="js/app.js"></script>
-	  </div>
-  </body>
+    <div class="options">
+        <button onclick="randomizeSentence()">Randomize</button>
+        <button onclick="resetSentence()">Reset</button>
+        <button id="speakButton">Speak the prepared sentence</button>
+    </div>
+    <div class="sentence">
+        <p id="sentence"></p>
+        <script src="js/app.js"></script>
+    </div>
+</body>
+
 </html>
