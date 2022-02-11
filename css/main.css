@@ -8,7 +8,7 @@ img {
 }
 body
 {
-    background-color: rgb(255, 255, 0);
+    background-color: yellow !important;
     padding: 0px 100px;
 }
 .row {
@@ -49,4 +49,33 @@ body
     width: 100%;
     justify-content: center;
     font-size: large;
+}
+
+
+body div div:nth-child(1) { 
+    background-color: purple;
+}
+
+body div div:nth-child(2) { 
+    background-color: turquoise;
+}
+
+
+body div div:nth-child(3) { 
+    background-color: green;
+}
+
+
+body div div:nth-child(4) { 
+    background-color: orange;
+}
+
+
+body div div:nth-child(5) {
+    background-color: darkmagenta;
+}
+
+
+.sentence {
+    color: black;
 }
